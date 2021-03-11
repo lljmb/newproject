@@ -12,7 +12,7 @@ server.use(express.static(path.join(__dirname, 'client/build')))
 if (process.env.NODE_ENV === 'development') {
 const cors = require('cors');
 server.use(cors());
-}
+} 
 
 server.get('/api/hello', (req, res) => {
     res.json({message: 'hello'})
